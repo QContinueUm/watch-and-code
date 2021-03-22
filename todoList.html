@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Practical JavaScript</title>
+  </head>
+
+  <body>
+    <script>
+      var todos = ['Item 1', 'Item 2', 'Item 3'];
+
+      console.log(todos);
+
+      function add(item) {
+        todos.push(item);
+        console.log(todos);
+      }
+
+      function edit(item, update) {
+        todos[item] = update;
+        console.log(todos);
+      }
+
+      function remove(item) {
+        todos.splice(item, 1);
+        console.log(todos); 
+      }
+    </script>
+  </body>
+</html>
