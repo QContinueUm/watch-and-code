@@ -16,15 +16,13 @@
 
       console.log(todos);
 
-      function add(todoItem) {
-        todos.push({todoText: todoItem, completed: false});
+      function add(initialTodoItem) {
+        todos.push({todoText: initialTodoItem, completed: false});
         console.log(todos);
       }
 
-
-      // rewrite so second argument is saved to property on object at position
-      function edit(item, update) {
-        todos[item] = update;
+      function edit(itemPosition, updateTodoText) {
+        todos[itemPosition].todoText = updateTodoText;
         console.log(todos);
       }
       // can prob stay the same
