@@ -30,6 +30,28 @@
         todos.splice(item, 1);
         console.log(todos); 
       }
+
+      // toggle(0); item 1
+      // {todoText: 'Item1', completed: true} 
+      // target 'completed' to change true/false/true etc.
+
+      function toggle(position) {
+        if (todos[position].completed === false) {    
+        // if todo at position has .completed equal to false
+          todos[position].completed = true; // make .completed true
+        } else if (todos[position].completed = true) {
+          todos[position].completed = false;
+        }
+      }
+          
+
+        // if todo at position has .completed equal to true
+          // make .completed false
+        // display todos to the console
+      
+      
+
+      
     </script>
   </body>
 </html>
