@@ -14,21 +14,21 @@
         {todoText: 'Item 3', completed: false}
       ];
 
-      console.log(todos);
+      displayTodos();
 
       function add(initialTodoItem) {
         todos.push({todoText: initialTodoItem, completed: false});
-        console.log(todos);
+        displayTodos();
       }
 
       function edit(itemPosition, updateTodoText) {
         todos[itemPosition].todoText = updateTodoText;
-        console.log(todos);
+        displayTodos();
       }
       // can prob stay the same
       function remove(item) {
         todos.splice(item, 1);
-        console.log(todos); 
+        displayTodos(); 
       }
 
       function toggle(position) {
@@ -37,10 +37,12 @@
         } else {
           todos[position].completed = false;
         }
-        console.log(todos);
+        displayTodos();
       }    
 
-      
+      function displayTodos() {
+        console.log(todos);
+      }
     </script>
   </body>
 </html>
